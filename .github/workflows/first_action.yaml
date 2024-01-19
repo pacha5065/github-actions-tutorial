@@ -18,7 +18,7 @@ jobs:
         node-version: "10.x"
   second_job:
     name: second
-    runs-on: ubuntu-18.04
+    runs-on: ubuntu-latest
     steps:
     -  name: setup go
        uses: actions/setup-go@v5.0.0
