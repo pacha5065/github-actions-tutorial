@@ -1,1 +1,18 @@
+name: "Prem's first Github action"
 
+on:
+  push:
+    branches:
+      -main
+
+  workflow_dispatch:
+
+jobs:
+  first_job:
+    name: test
+    runs-on: ubuntu-latest
+    steps:
+    - name: setup node
+      uses: actions/setup-node@v1
+      with:
+        node-version: "10.x"
