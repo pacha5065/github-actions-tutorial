@@ -16,3 +16,10 @@ jobs:
       uses: actions/setup-node@v1
       with:
         node-version: "10.x"
+  second_job:
+    name: second
+    runs-on: ubuntu-18.04
+    steps:
+    -  name: setup go
+       uses: actions/setup-go@v5.0.0
+    
