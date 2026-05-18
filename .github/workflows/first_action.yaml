@@ -1,1 +1,15 @@
+name: First action
+on: push
+
+jobs:
+    first_test1:
+        runs-on: ubuntu-latest
+        steps:
+            - name: welcome message
+              run: |
+                echo "My first github action"
+                ls
+                cat README.md
+            - name: checkout code
+              run: actions/checkout@v2
 
