@@ -5,11 +5,12 @@ jobs:
     first_test1:
         runs-on: ubuntu-latest
         steps:
+            - name: checkout code
+              run: actions/checkout@v2
             - name: welcome message
               run: |
                 echo "My first github action"
                 ls
                 cat README.md
-            - name: checkout code
-              run: actions/checkout@v2
+
 
